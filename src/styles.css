@@ -1,1 +1,69 @@
-/* You can add global styles to this file, and also import other style files */
+/* ── Reset ─────────────────────────────────── */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 14px;
+  background: #F0F2F5;
+  color: #1A1A2E;
+  padding: 24px 16px;
+  min-height: 100vh;
+}
+
+h1 { 
+  font-size: 26px; 
+  font-weight: 700;
+  color: #4A00E0;
+  margin-bottom: 24px;
+  padding-bottom: 12px;
+  border-bottom: 3px solid #4A00E0;
+  letter-spacing: 0.5px;
+}
+
+h2 { font-size: 18px; font-weight: 600; color: #1A1A2E; margin-bottom: 16px; }
+h3 { font-size: 15px; font-weight: 600; color: #444; margin-bottom: 12px; }
+
+/* ── HighlightDirective classes ─────────────── */
+.active  { border: 2px solid #4CAF50 !important; border-radius: 6px; }
+.hovered { background: #EDE7F6 !important; }
+
+/* ── Inputs & Selects globaux ───────────────── */
+input, select, textarea {
+  font-family: inherit;
+  font-size: 14px;
+  border: 1.5px solid #D1D5DB;
+  border-radius: 8px;
+  padding: 8px 12px;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  background: #fff;
+  width: 100%;
+  color: #1A1A2E;
+}
+
+input:focus, select:focus {
+  border-color: #4A00E0;
+  box-shadow: 0 0 0 3px rgba(74, 0, 224, 0.12);
+}
+
+input[type="checkbox"] {
+  width: auto;
+  accent-color: #4A00E0;
+  cursor: pointer;
+}
+
+/* ── Boutons globaux ────────────────────────── */
+button {
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  padding: 7px 14px;
+  transition: all 0.2s;
+}

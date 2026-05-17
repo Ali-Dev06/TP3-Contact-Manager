@@ -1,0 +1,66 @@
+.stats-container {
+  background: linear-gradient(135deg, #4A00E0 0%, #8E2DE2 100%);
+  border-radius: 14px;
+  padding: 20px 24px;
+  margin-bottom: 20px;
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+  box-shadow: 0 4px 20px rgba(74, 0, 224, 0.25);
+}
+
+.stats-title {
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  margin-bottom: 4px;
+}
+
+.stat-card {
+  background: rgba(255,255,255,0.15);
+  border-radius: 10px;
+  padding: 10px 18px;
+  text-align: center;
+  backdrop-filter: blur(4px);
+  min-width: 100px;
+}
+
+.stat-card .value {
+  font-size: 26px;
+  font-weight: 800;
+  line-height: 1.1;
+}
+
+.stat-card .label {
+  font-size: 11px;
+  opacity: 0.85;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-top: 2px;
+}
+
+.barre-wrapper {
+  flex: 1;
+  min-width: 200px;
+}
+
+.barre-wrapper .barre-label {
+  font-size: 12px;
+  margin-bottom: 6px;
+  opacity: 0.9;
+}
+
+.barre-bg {
+  background: rgba(255,255,255,0.25);
+  border-radius: 20px;
+  height: 12px;
+  overflow: hidden;
+}
+
+.barre-fill {
+  height: 12px;
+  border-radius: 20px;
+  transition: width 0.6s ease;
+}
